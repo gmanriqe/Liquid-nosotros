@@ -20,15 +20,15 @@
 </head>
 
 <body>
+    <!-- https://www.figma.com/file/cXpCpMaKXreiu8nITXvVleio/Website-v2.0?node-id=412%3A769 -->
     <section class="hero-banner not-padding">
         <div class="container">
             <div class="row">
-                <div class="offset-2 col-8">
+                <div class="offset-sm-2 col-sm-8 col-12">
                     <div class="hero-banner-content padding-small">
                         <span>/ conoce a quienes lo hacen posible /</span>
                         <h1>Nosotros</h1>
                         <img src="img/triangle.svg" alt="triangle">
-                        <img src="img/arrow.svg" alt="arrow" class="mobile-show">
                     </div>
                 </div>
             </div>
@@ -37,13 +37,14 @@
     <section class="phrase not-padding">
         <div class="container">
             <div class="row">
-                <div class="offset-2 col-8">
+                <div class="offset-sm-2 col-sm-8 col-12">
                     <div class="phrase-content padding-small">
                         <p>Somos un equipo dedicado a <strong>fomentar el crecimiento integral</strong> de
                             emprendimietos de
                             base digital. Compartimos nuestro conocimiento para guiarlos tanto en lo técnico, como en lo
                             estratégico.</p>
-                        <img src="img/Mouse-Scroll.svg" alt="mouse scroll">
+                        <img src="img/Mouse-Scroll.svg" alt="mouse scroll" class="show-desktop">
+                        <img src="img/arrow.svg" alt="arrow" class="show-mobile">
                     </div>
                 </div>
             </div>
@@ -105,7 +106,7 @@
     <section class="design-team">
         <div class="container">
             <div class="row">
-                <div class="offset-2 col-8">
+                <div class="offset-sm-2 col-sm-8 col-12">
                     <h2 class="title-not-phase">Design Team — Líderes estratégicos</h2>
                     <div class="row">
                         <div class="col-12">
@@ -115,8 +116,7 @@
                                         <figure>
                                             <img src="img/carla-donayre.png" alt="carla donayre">
                                         </figure>
-                                        <ul class="d-none">
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <ul class="show-mobile">
                                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                         </ul>
@@ -132,7 +132,7 @@
                                                 interdum nisl, lorem sollicitudin sed. At turpis id eget feugiat
                                                 suspendisse
                                                 faucibus tristique dolor pulvinar.</p>
-                                            <ul>
+                                            <ul class="show-desktop">
                                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
@@ -147,8 +147,7 @@
                                         <figure>
                                             <img src="img/cesar-saenz.png" alt="cesar saenz">
                                         </figure>
-                                        <ul class="d-none">
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <ul class="show-mobile">
                                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                         </ul>
@@ -164,7 +163,7 @@
                                                 interdum nisl, lorem sollicitudin sed. At turpis id eget feugiat
                                                 suspendisse
                                                 faucibus tristique dolor pulvinar.</p>
-                                            <ul>
+                                            <ul class="show-desktop">
                                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
@@ -179,8 +178,7 @@
                                         <figure>
                                             <img src="img/hugo-campodonico.png" alt="hugo campodonico">
                                         </figure>
-                                        <ul class="d-none">
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <ul class="show-mobile">
                                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                         </ul>
@@ -196,7 +194,7 @@
                                                 interdum nisl, lorem sollicitudin sed. At turpis id eget feugiat
                                                 suspendisse
                                                 faucibus tristique dolor pulvinar.</p>
-                                            <ul>
+                                            <ul class="show-desktop">
                                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
@@ -214,86 +212,227 @@
     <section class="mentoring padding-small">
         <div class="container">
             <div class="row">
-                <div class="offset-2 col-8">
+                <div class="offset-sm-2 col-sm-8 col-12">
                     <h2 class="title-phase">Mentores en nuestra comunidad</h2>
                     <span>En <strong>LIQUID Venture Studio</strong> queremos que desarrolles al máximo tus capacidades,
                         por eso incorporamos a nuestra red, mentores que brindan su conocimiento en diversas
                         especialidades.</span>
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="card-form-2">
-                                <figure>
-                                    <img src="img/jose-antonio-avila.png" alt="jose antonio avila">
-                                </figure>
-                                <h4>josé antonio avila</h4>
-                                <p>Head of Strategic Design — <strong>IED Madrid</strong>, Centro Superior de Diseño</p>
-                                <span>experiencience design</span>
+                    <div class="mentorin-filter">
+                        
+                        <div class="row">
+                            <div class="col-sm-4 col-12">
+                                <div class="card-form-2">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-4">
+                                            <figure>
+                                                <img src="img/jose-antonio-avila.png" alt="jose antonio avila">
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-12 col-8">
+                                            <h4>josé antonio avila</h4>
+                                            <p>Head of Strategic Design — <strong>IED Madrid</strong>, Centro Superior
+                                                de
+                                                Diseño</p>
+                                            <span>experiencience design</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card-form-2">
-                                <figure>
-                                    <img src="img/denisse-cuellar.png" alt="denisse cuellar">
-                                </figure>
-                                <h4>denisse cuellar</h4>
-                                <p>Gerente de Ecosistema Extendido (Fintech & Startups) — <strong>BCP</strong> </p>
-                                <span>finanzas</span>
+                            <div class="col-sm-4 col-12">
+                                <div class="card-form-2">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-4">
+                                            <figure>
+                                                <img src="img/denisse-cuellar.png" alt="denisse cuellar">
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-12 col-8">
+                                            <h4>denisse cuellar</h4>
+                                            <p>Gerente de Ecosistema Extendido (Fintech & Startups) —
+                                                <strong>BCP</strong>
+                                            </p>
+                                            <span>finanzas</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card-form-2">
-                                <figure>
-                                    <img src="img/natalie-gil.png" alt="natalie gil">
-                                </figure>
-                                <h4>natalie gil</h4>
-                                <p>Practice Director — <strong>Rational7</strong></p>
-                                <span>tecnología</span>
+                            <div class="col-sm-4 col-12">
+                                <div class="card-form-2">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-4">
+                                            <figure>
+                                                <img src="img/natalie-gil.png" alt="natalie gil">
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-12 col-8">
+                                            <h4>natalie gil</h4>
+                                            <p>Practice Director — <strong>Rational7</strong></p>
+                                            <span>tecnología</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card-form-2">
-                                <figure>
-                                    <img src="img/rafael-lopez-aliaga.png" alt="rafael lopez aliaga">
-                                </figure>
-                                <h4>rafael lopez aliaga</h4>
-                                <p> Presidente del Directorio — <strong>Acres Investments</strong></p>
-                                <span>finanzas</span>
+                            <div class="col-sm-4 col-12">
+                                <div class="card-form-2">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-4">
+                                            <figure>
+                                                <img src="img/rafael-lopez-aliaga.png" alt="rafael lopez aliaga">
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-12 col-8">
+                                            <h4>rafael lopez aliaga</h4>
+                                            <p> Presidente del Directorio — <strong>Acres Investments</strong></p>
+                                            <span>finanzas</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card-form-2">
-                                <figure>
-                                    <img src="img/natalia-manso.png" alt="natalia manso">
-                                </figure>
-                                <h4>natalia manso</h4>
-                                <p>Socia — <strong>MakingSense</strong> y <strong>The Office</strong>, Centro de Negocios </p>
-                                <span>finanzas</span>
+                            <div class="col-sm-4 col-12">
+                                <div class="card-form-2">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-4">
+                                            <figure>
+                                                <img src="img/natalia-manso.png" alt="natalia manso">
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-12 col-8">
+                                            <h4>natalia manso</h4>
+                                            <p>Socia — <strong>MakingSense</strong> y <strong>The Office</strong>,
+                                                Centro de
+                                                Negocios </p>
+                                            <span>finanzas</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card-form-2">
-                                <figure>
-                                    <img src="img/daniel-martin-prieto.png" alt="daniel martín prieto">
-                                </figure>
-                                <h4>daniel martín prieto</h4>
-                                <p>Fundador y Director General — <strong>Equity Advisors</strong></p>
-                                <span>finanzas</span>
+                            <div class="col-sm-4 col-12">
+                                <div class="card-form-2">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-4">
+                                            <figure>
+                                                <img src="img/daniel-martin-prieto.png" alt="daniel martín prieto">
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-12 col-8">
+                                            <h4>daniel martín prieto</h4>
+                                            <p>Fundador y Director General — <strong>Equity Advisors</strong></p>
+                                            <span>finanzas</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="text-center">
-                            <a href="" class="btn btn-light">Cargar más</a>
+                            <div class="col-sm-4 col-12">
+                                <div class="card-form-2">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-4">
+                                            <figure>
+                                                <img src="img/greg-mitchell.png" alt="greg mitchell">
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-12 col-8">
+                                            <h4>greg mitchell</h4>
+                                            <p>Managing Director — Angel Ventures Peru</p>
+                                            <span>finanzas</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-12">
+                                <div class="card-form-2">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-4">
+                                            <figure>
+                                                <img src="img/ana-luisa-orbegoso.png" alt="ana luisa orbegoso">
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-12 col-8">
+                                            <h4>ana luisa orbegoso</h4>
+                                            <p>Socia Fundadora y Directora de Innovación — Starscamp</p>
+                                            <span>experience design</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-12">
+                                <div class="card-form-2">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-4">
+                                            <figure>
+                                                <img src="img/alexander-orbezo.png" alt="alexandra orbezo">
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-12 col-8">
+                                            <h4>alexandra orbezo</h4>
+                                            <p>Socia — Estudio Rebaza, Alcázar y De Las Casas</p>
+                                            <span>asesoría legal</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-12">
+                                <div class="card-form-2">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-4">
+                                            <figure>
+                                                <img src="img/fernando-parodi-zevallos.png"
+                                                    alt="fernando parodi zevallos">
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-12 col-8">
+                                            <h4>fernando parodi zevallos</h4>
+                                            <p>Managing Director — Angel Ventures Peru</p>
+                                            <span>finanzas</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-12">
+                                <div class="card-form-2">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-4">
+                                            <figure>
+                                                <img src="img/jose-miguel-porto.png" alt="josé miguel porto">
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-12 col-8">
+                                            <h4>josé miguel porto</h4>
+                                            <p>Socia Fundadora y Directora de Innovación — Starscamp</p>
+                                            <span>experience design</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-12">
+                                <div class="card-form-2">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-4">
+                                            <figure>
+                                                <img src="img/chechu-salas.png" alt="chechu salas">
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-12 col-8">
+                                            <h4>chechu salas</h4>
+                                            <p>Socia — Estudio Rebaza, Alcázar y De Las Casas</p>
+                                            <span>asesoría legal</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="text-center">
+                                    <a href="" class="btn btn-light">Cargar más</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <section class="join-our-team">
         <div class="container">
             <div class="row">
-                <div class="offset-2 col-8">
+                <div class="offset-sm-2 col-sm-8 col-12">
                     <h2 class="title-phase">¿Quieres unirte a nuestro equipo?</h2>
                     <span>Forma parte de un equipo multidisciplinario de profesionales enfocados en el desarrollo y
                         fortalecimiento de diversos emprendimientos en su camino al crecimiento.</span>
@@ -306,6 +445,8 @@
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- Isotope -->
+    <script src="js/isotope.pkgd.min.js"></script>
 </body>
 
 </html>
