@@ -1,0 +1,315 @@
+/*
+
+01.Globales
+
+
+*/
+
+
+
+
+
+/* 01.Globales */
+
+
+.menu{
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transition: all .3s;
+    .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .nav__brand{
+      img{
+        height: 54px;
+        transition: all .3s;
+      }
+    }
+  
+    .menu__nav{
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+      li{
+        
+       a{
+         color: $dark;
+       }
+      }
+      @include mobile(){
+        display: none;
+      }
+    }
+    
+    &.active{
+      background-color: #fff;
+      padding: 10px 0;
+      box-shadow: 0 5px 10px rgba($dark2,.1);
+      .nav__brand{
+        img{
+          height: 40px;
+        }
+      }
+  
+    }
+  
+  }
+  
+  .btn-liquid{
+    display: block;
+    background-color: $sky1;
+    color: #fff;
+    box-shadow: 0px 0px 30px rgba($sky1, 0.45);
+    font-size: 14px;
+    transition: all .3s;
+    &:hover{
+      color: #fff;
+      background-color: $highlight;
+      box-shadow: 0px 0px 30px rgba($highlight, 0.45);
+    }
+  }
+  
+  .link__liquid{
+    color: $sky1;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: all .3s;
+    .ico{
+      width: 52px;
+      height: 52px;
+      display: inline-block;
+      background-image: url(../img/flechas.svg);
+      background-repeat: no-repeat;
+      background-size: 105px;
+      background-position: left;
+      margin-left: 10px;
+    }
+  
+    &:hover{
+      color: $highlight;
+      text-decoration: none;
+      .ico{
+        background-position: right;
+      }
+    }
+  }
+  
+  .link__liquid--color{
+    @extend .link__liquid;
+    .ico{
+      border-radius: 3px;
+      overflow: hidden;
+      background-size: 150px;
+      background-position: -12px;
+      background-image: url(../img/flechas2.svg);
+      box-shadow: 0px 0px 30px rgba($sky1, 0.45);
+    }
+    &:hover{
+      .ico{
+        background-position: -85px;
+        box-shadow: 0px 0px 30px rgba($highlight, 0.45);
+      }
+    }
+  }
+  
+  section{
+    padding: 60px 0;
+  }
+  
+  
+  h2{
+    color: $sky1;
+    font-size: 30px;
+    font-family: 'Roboto Slab',serif;
+    text-align: center;
+    @include mobile(){
+      text-align: left;
+    }
+  }
+  
+  footer{
+    min-height: 200px;
+    background-color: $dark;
+    width: 100%;
+    color: #C5CDDB;
+    padding: 20px;
+    .footer__top, .footer__bottom{
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer__top{
+      padding-top: 40px;
+      border-bottom: solid 1px #C5CDDB;
+      @include mobile(){
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    .footer__socials{
+  
+      &>img{
+        margin-bottom: 20px;
+      }
+      .footer__itemSociales{
+        img{
+          width: 24px;
+          margin-right: 10px;
+        }
+      }
+      @include mobile(){
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+    .footer__newsletter{
+      strong{
+        font-size: 24px;
+        display: block;
+        color: #C5CDDB;
+        font-family: 'Roboto Slab', serif;
+        margin-bottom: 10px;
+      }
+      span{
+        color: #C5CDDB;
+        margin-bottom: 20px;
+        display: block;
+      }
+      form{
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        input{
+          background-color: #C5CDDB;
+          border: none;
+          padding: 5px 20px;
+          min-height: 40px;
+          width: 100%;
+          max-width: 350px;
+          color: $dark;
+          &::placeholder{
+            color: $dark;
+          }
+          @include mobile(){
+            display: block;
+            width: 100%;
+          }
+        }
+        button{
+          background-color: transparent;
+          border: solid 2px #C5CDDB;
+          margin: 0;
+          min-height: 40px;
+          color: #C5CDDB;
+          margin-left: 10px;
+          border-radius: 5px;
+          cursor:pointer;
+          display: flex;
+          align-items: center;
+          span{
+            margin-bottom: 0;
+            @include mobile(){
+              display: none;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          &:hover{
+            //background-color: #C5CDDB;
+            color: $dark!important;
+            @include mobile(){
+              background-color: transparent;
+            }
+          }
+          @include mobile(){
+            width: 45px;
+            position: relative;
+            border: none;
+          }
+        }
+        @include mobile(){
+          width: 100%;
+          justify-content: space-between;
+  
+        }
+        .space{
+          display: none;
+          @include mobile(){
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 45px;
+            min-height: 40px;
+            background-image: url(../img/flechas3.svg);
+            background-position: right;
+            background-size: 90px;
+            background-repeat: no-repeat;
+            &:hover{
+              background-position: left;
+            }
+          }
+        }
+      }
+      @include mobile(){
+        width: 100%;
+  
+      }
+    }
+    .footer__bottom{
+      @include mobile(){
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+    }
+    .footer__copy{
+      font-size: 12px;
+      line-height: 18px ;
+      strong{
+        font-weight: bold;
+      }
+    }
+    .footer__respaldo{
+      display: flex;
+      align-items: center;
+      span{
+        font-size: 12px;
+        @include mobile(){
+          display: block;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+      img{
+        margin-left: 15px;
+        @include mobile(){
+          margin-right: 15px;
+          margin-left: initial;
+        }
+      }
+  
+      @include mobile(){
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+    }
+  }
+  
+  
